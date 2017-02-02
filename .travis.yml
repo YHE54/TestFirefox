@@ -17,7 +17,7 @@ before_install:
  - tar -xzf geckodriver-v0.11.1-linux64.tar.gz -C geckodriver
  - export PATH=$PATH:$PWD/geckodriver
 
- - cd '/home/travis/build/YHE54/TestHelloWorld/caMicroscopeTestSuite'
+ - cd '/home/travis/build/YHE54/TestFirefox/caMicroscopeTestSuite'
  - npm install
 
 before_script:
@@ -26,12 +26,12 @@ before_script:
   - sleep 3 # give xvfb some time to start
   
 script:
- - wget "https://raw.githubusercontent.com/YHE54/TestHelloWorld/master/install.sh"
+ - wget "https://raw.githubusercontent.com/YHE54/TestFirefox/master/install.sh"
  - chmod a+x install.sh
  - wget "http://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/CMU-1-Small-Region.svs"
- - wget "https://raw.githubusercontent.com/YHE54/TestHelloWorld/master/caMicroscopeTestSuite/test1.sh"
+ - wget "https://raw.githubusercontent.com/YHE54/TestFirefox/master/caMicroscopeTestSuite/test1.sh"
  - chmod a+x test1.sh
- - wget "https://raw.githubusercontent.com/YHE54/TestHelloWorld/master/caMicroscopeTestSuite/selenium-server-standalone-3.0.0-beta4.jar"
+ - wget "https://raw.githubusercontent.com/YHE54/TestFirefox/master/caMicroscopeTestSuite/selenium-server-standalone-3.0.0-beta4.jar"
  - xvfb-run java -jar ./selenium-server-standalone-3.0.0-beta4.jar&
- - wget "https://raw.githubusercontent.com/YHE54/TestHelloWorld/master/caMicroscopeTestSuite/chromedriver"
+ - wget "https://raw.githubusercontent.com/YHE54/TestFirefox/master/caMicroscopeTestSuite/chromedriver"
  - ./node_modules/webdriverio/bin/wdio wdio.conf.js
