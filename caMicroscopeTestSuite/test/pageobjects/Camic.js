@@ -3,7 +3,7 @@ function Camic() {
 }
 
 Camic.prototype.open = function(path){
-    browser.url('http://snake.bmi.emory.edu:1337/camicroscope/osdCamicroscope.php?tissueId=CMUz');
+    browser.url('http://localhost:1337/camicroscope2/osdCamicroscope.php?tissueId=CMU-1-Small-Region');
 };
 
 module.exports = new Camic();
