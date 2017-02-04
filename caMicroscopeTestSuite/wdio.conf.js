@@ -44,7 +44,7 @@ exports.config = {
         // 5 instance gets started at a time.
         //maxInstances: 5,
         //browserName=chrome,maxInstances=5,platform=LINUX
-        browserName: 'firefox' 
+        browserName: 'Firefox' 
     }],
     //
     // ===================
