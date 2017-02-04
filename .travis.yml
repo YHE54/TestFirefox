@@ -4,7 +4,7 @@ jdk:
 services:
   - docker
 addons:
-  firefox: "46.0"
+  Firefox: "46.0"
 before_install:
  - npm install --save selenium-webdriver@2.44.0 
  - npm install selenium-webdriver
