@@ -45,7 +45,7 @@ exports.config = {
         //maxInstances: 5,
         //browserName=chrome,maxInstances=5,platform=LINUX
         browserName: 'firefox' 
-        version: '46'
+        version: '46.0'
     }],
     //
     // ===================
