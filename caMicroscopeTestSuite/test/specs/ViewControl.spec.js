@@ -9,7 +9,7 @@ var webdriverio = require('webdriverio');
 //var driver = new webdriver.Builder()
 //    .forBrowser(chrome)
 //   .build();
-var options = { desiredCapabilities : { browserName: 'firefox' };
+var options = { desiredCapabilities : { browserName: 'firefox' } };
 var client = webdriverio.remote(options);
 
 describe('Viewing options', function() {
