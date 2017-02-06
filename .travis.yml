@@ -32,5 +32,5 @@ script:
  - wget "https://raw.githubusercontent.com/YHE54/TestFirefox/master/caMicroscopeTestSuite/test1.sh"
  - chmod a+x test1.sh
  - wget "https://raw.githubusercontent.com/YHE54/TestFirefox/master/caMicroscopeTestSuite/selenium-server-standalone-3.0.0-beta4.jar"
- - xvfb-run -a java -jar ./selenium-server-standalone-3.0.0-beta4.jar&
+ - java -jar ./selenium-server-standalone-3.0.0-beta4.jar&
  - ./node_modules/webdriverio/bin/wdio wdio.conf.js
