@@ -26,8 +26,8 @@ before_script:
   - sleep 3 # give xvfb some time to start
   
 script:
- - wget "https://raw.githubusercontent.com/YHE54/TestFirefox/master/install.sh"
- - chmod +x ./install.sh
+ - git clone 'https://github.com/YHE54/Distro.git'
+ - ./install.sh
  - wget "http://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/CMU-1-Small-Region.svs"
  - wget "https://raw.githubusercontent.com/YHE54/TestFirefox/master/caMicroscopeTestSuite/test1.sh"
  - chmod a+x test1.sh
