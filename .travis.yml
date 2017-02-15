@@ -26,7 +26,7 @@ before_script:
   
 script:
  - git clone 'https://github.com/YHE54/TestFirefox.git'
- - cd 'TestFirefox/Distro'
+ - cd '/home/travis/build/YHE54/TestFirefox/caMicroscopeTestSuite/TestFirefox/Distro'
  - pwd
  - sudo ./install.sh
  - wget "http://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/CMU-1-Small-Region.svs"
@@ -35,5 +35,5 @@ script:
  - wget "https://raw.githubusercontent.com/YHE54/TestFirefox/master/caMicroscopeTestSuite/selenium-server-standalone-3.0.0-beta4.jar"
  - java -jar ./selenium-server-standalone-3.0.0-beta4.jar&
  - cd ..
- - cd 'caMicroscopeTestSuite
+ - cd '/home/travis/build/YHE54/TestFirefox/caMicroscopeTestSuite/TestFirefox/caMicroscopeTestSuite'
  - ./node_modules/webdriverio/bin/wdio wdio.conf.js
