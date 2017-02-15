@@ -26,6 +26,8 @@ before_script:
   
 script:
  - git clone 'https://github.com/YHE54/TestFirefox.git'
+ - git clone 'https://github.com/YHE54/Distro.git'
+ - ls
  - cd '/home/travis/build/YHE54/TestFirefox/caMicroscopeTestSuite/TestFirefox/Distro'
  - pwd
  - sudo ./install.sh
