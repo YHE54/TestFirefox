@@ -27,7 +27,7 @@ before_script:
 script:
  - git clone 'https://github.com/YHE54/TestFirefox.git'
  - cd 'TestFirefox/Distro'
- - ./install.sh
+ - sudo ./install.sh
  - wget "http://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/CMU-1-Small-Region.svs"
  - wget "https://raw.githubusercontent.com/YHE54/TestFirefox/master/caMicroscopeTestSuite/test1.sh"
  - chmod a+x test1.sh
