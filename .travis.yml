@@ -33,5 +33,7 @@ script:
  - wget "https://raw.githubusercontent.com/YHE54/TestFirefox/master/caMicroscopeTestSuite/selenium-server-standalone-3.0.0-beta4.jar"
  - java -jar ./selenium-server-standalone-3.0.0-beta4.jar&
  - git clone 'https://github.com/YHE54/TestFirefox.git'
+ - ls
  - cd 'TestFirefox/caMicroscopeTestSuite'
+ - ls
  - ./node_modules/webdriverio/bin/wdio wdio.conf.js
