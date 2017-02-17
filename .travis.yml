@@ -6,8 +6,10 @@ services:
 addons:
   firefox: "46.0"
 before_install:
- - git clone 'https://github.com/YHE54/TestFirefox.git'
- - cd 'TestFirefox'
+ - git clone 'https://github.com/YHE54/caMicroscopeTestSuite.git'
+ - ls
+ - cd 'caMicroscopeTestSuite'
+ - ls
  - npm install --save selenium-webdriver@2.44.0 
  - npm install selenium-webdriver
  - npm install mocha
@@ -17,8 +19,6 @@ before_install:
  - mkdir geckodriver
  - tar -xzf geckodriver-v0.11.1-linux64.tar.gz -C geckodriver
  - export PATH=$PATH:$PWD/geckodriver
-
- - cd 'caMicroscopeTestSuite'
  - npm install
 
 before_script:
@@ -30,7 +30,6 @@ script:
  - ls
  - cd ..
  - ls 
- - cd ..
  - git clone 'https://github.com/YHE54/Distro.git'
  - cd 'Distro'
  - ./install.sh
@@ -40,7 +39,6 @@ script:
  - java -jar ./selenium-server-standalone-3.0.0-beta4.jar&
  - ls
  - cd ..
- - ls
- - cd 'TestFirefox/caMicroscopeTestSuite'
+ - cd 'caMicroscopeTestSuite'
  - ls
  - ./node_modules/webdriverio/bin/wdio wdio.conf.js
