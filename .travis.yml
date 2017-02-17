@@ -7,8 +7,6 @@ addons:
   firefox: "46.0"
 before_install:
  - ls
- - git clone 'https://github.com/YHE54/caMicroscopeTestSuite.git'
- - ls
  - cd 'caMicroscopeTestSuite'
  - ls
  - npm install --save selenium-webdriver@2.44.0 
@@ -31,7 +29,6 @@ script:
  - ls
  - cd ..
  - ls 
- - git clone 'https://github.com/YHE54/Distro.git'
  - cd 'Distro'
  - ./install.sh
  - wget "http://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/CMU-1-Small-Region.svs"
