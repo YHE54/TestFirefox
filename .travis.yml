@@ -9,6 +9,7 @@ before_install:
  - ls
  - cd 'caMicroscopeTestSuite'
  - ls
+ - npm install
  - npm install --save selenium-webdriver@2.44.0 
  - npm install selenium-webdriver
  - npm install mocha
@@ -18,7 +19,6 @@ before_install:
  - mkdir geckodriver
  - tar -xzf geckodriver-v0.11.1-linux64.tar.gz -C geckodriver
  - export PATH=$PATH:$PWD/geckodriver
- - npm install
 
 before_script:
   - "export DISPLAY=:99.0"
