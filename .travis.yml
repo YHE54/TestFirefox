@@ -6,6 +6,8 @@ services:
 addons:
   firefox: "46.0"
 before_install:
+ - git clone 'https://github.com/YHE54/TestFirefox.git'
+ - cd 'TestFirefox'
  - npm install --save selenium-webdriver@2.44.0 
  - npm install selenium-webdriver
  - npm install mocha
@@ -16,7 +18,7 @@ before_install:
  - tar -xzf geckodriver-v0.11.1-linux64.tar.gz -C geckodriver
  - export PATH=$PATH:$PWD/geckodriver
 
- - cd '/home/travis/build/YHE54/TestFirefox/caMicroscopeTestSuite'
+ - cd 'caMicroscopeTestSuite'
  - npm install
 
 before_script:
@@ -25,6 +27,10 @@ before_script:
   - sleep 3 # give xvfb some time to start
   
 script:
+ - ls
+ - cd ..
+ - ls 
+ - cd ..
  - git clone 'https://github.com/YHE54/Distro.git'
  - cd 'Distro'
  - ./install.sh
@@ -32,7 +38,8 @@ script:
  - curl -v -F case_id=CMU1 -F file_location=@CMU-1-Small-Region.svs http://localhost:6002/submitData
  - wget "https://raw.githubusercontent.com/YHE54/TestFirefox/master/caMicroscopeTestSuite/selenium-server-standalone-3.0.0-beta4.jar"
  - java -jar ./selenium-server-standalone-3.0.0-beta4.jar&
- - git clone 'https://github.com/YHE54/TestFirefox.git'
+ - ls
+ - cd ..
  - ls
  - cd 'TestFirefox/caMicroscopeTestSuite'
  - ls
