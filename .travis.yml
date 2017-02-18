@@ -9,11 +9,9 @@ before_install:
  - ls
  - cd 'caMicroscopeTestSuite'
  - ls
- - npm install
- - npm install --save selenium-webdriver@2.44.0 
- - npm install selenium-webdriver
  - npm install mocha
  - npm install chai
+ - npm install
  - npm install webdriverio
  - wget https://github.com/mozilla/geckodriver/releases/download/v0.11.1/geckodriver-v0.11.1-linux64.tar.gz
  - mkdir geckodriver
