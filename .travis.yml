@@ -27,6 +27,8 @@ script:
  - ls
  - cd ..
  - ls 
+ - cd .. 
+ - ls
  - git clone 'https://github.com/YHE54/Distro.git'
  - ls
  - cd 'Distro'
