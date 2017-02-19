@@ -29,8 +29,6 @@ script:
  - ls 
  - git clone 'https://github.com/YHE54/Distro.git'
  - ls
- - cd ..
- - ls
  - cd 'Distro'
  - ls
  - ./install.sh
