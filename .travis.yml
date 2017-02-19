@@ -40,6 +40,7 @@ script:
  - java -jar ./selenium-server-standalone-3.0.0-beta4.jar&
  - ls
  - cd ..
+ - cd 'TestFirefox'
  - cd 'caMicroscopeTestSuite'
  - ls
  - ./node_modules/webdriverio/bin/wdio wdio.conf.js
